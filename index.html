@@ -179,12 +179,20 @@
           </div>
         </div>
       </div>
-      <div id="footer">
-        <a href="" target="_blank">Click here for registration</a>
+      <div>
+        <div id="reset">
+          <button class="button2" role="button" onclick="resetSelections()">
+            Reset Selections
+          </button>
+        </div>
+        <div id="footer">
+          <a href="" target="_blank">Click here for registration</a>
+        </div>
       </div>
     </main>
   </body>
 </html>
+
 <script>
   if (localStorage.length) {
     var storedPosi = JSON.parse(localStorage.getItem("storedposi"));

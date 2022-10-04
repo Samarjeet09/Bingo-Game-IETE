@@ -53,3 +53,15 @@ const setRandom = (array) => {
   }
   localStorage.setItem("storedposi", JSON.stringify(bgimgFixed));
 };
+
+function resetSelections() {
+  buttonState.forEach((e, i) => {
+    if (e) {
+      buttonState[i] = false;
+      var btn = document.getElementById(`placeholder${i}`);
+      btn.style.backgroundColor = "#fbeee0";
+    }
+  });
+
+  localStorage.setItem("buttonState", JSON.stringify(buttonState));
+}
