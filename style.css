@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Peralta&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  /* display: flex; */
+  /* justify-content: center center; */
+  background-image: url("./pictures/bg.svg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+#navbar {
+  border: 2px solid black;
+  /* padding-top: 20px; */
+  line-height: 50px;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-bottom: 2px solid white;
+  font-family: "Gemunu Libre", sans-serif;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+/* #navbar h2 {
+  animation: heading 0.5s ease-in-out forwards;
+  visibility: hidden;
+  animation-delay: 1s;
+}
+
+@keyframes heading {
+  0% {
+    transform: translateX(-400px);
+  }
+} */
+.grid-container {
+  display: grid;
+  background-color: transparent;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  /* background-color: #2196f3; */
+  padding: 5px;
+}
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px dotted rgba(0, 0, 0, 0.8); */
+  /* padding: 20px; */
+  /* font-size: 30px; */
+  /* text-align: center; */
+  margin: 10px;
+  /* transform: rotate(90deg); */
+}
+
+/* CSS */
+.button1 {
+  background-color: #fbeee0;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #837f7a;
+  border-radius: 30px;
+  /* box-shadow: #422800 4px 4px 0 0; */
+  box-shadow: #040404 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  /* font-size: 18px; */
+  /* padding: 0 18px; */
+  line-height: 50px;
+  width: 70px;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+
+  /* touch-action: manipulation; */
+}
+
+.button1:hover {
+  background-color: #fff;
+}
+
+.button1:active {
+  box-shadow: #000000 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+#footer {
+  /* position: fixed; */
+  /* bottom: 0; */
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid white;
+}
+#footer a {
+  text-decoration: none;
+  color: rgb(0, 255, 208);
+  animation: colorchange 1s infinite;
+}
+@keyframes colorchange {
+  0% {
+    color: rgb(0, 255, 208);
+  }
+  25% {
+    color: rgb(150, 50, 100);
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: rgb(29, 207, 174);
+  }
+  100% {
+    color: yellow;
+  }
+}

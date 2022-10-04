@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="bigbraintime.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="navbar">
+        <h2 align="center" id="heading">IETE Student's Forum</h2>
+        <h5 align="center">GAME NAME</h5>
+      </div>
+      <div>
+        <div class="grid-container">
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder0"
+              role="button"
+              onclick="buttonCounter('placeholder0',0)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder1"
+              role="button"
+              onclick="buttonCounter('placeholder1',1)"
+            ></button>
+          </div>
+
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder2"
+              role="button"
+              onclick="buttonCounter('placeholder2',2)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder3"
+              role="button"
+              onclick="buttonCounter('placeholder3',3)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder4"
+              role="button"
+              onclick="buttonCounter('placeholder4',4)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder5"
+              role="button"
+              onclick="buttonCounter('placeholder5',5)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder6"
+              role="button"
+              onclick="buttonCounter('placeholder6',6)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder7"
+              role="button"
+              onclick="buttonCounter('placeholder7',7)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder8"
+              role="button"
+              onclick="buttonCounter('placeholder8',8)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder9"
+              role="button"
+              onclick="buttonCounter('placeholder9',9)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder10"
+              role="button"
+              onclick="buttonCounter('placeholder10',10)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder11"
+              role="button"
+              onclick="buttonCounter('placeholder11',11)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder12"
+              role="button"
+              onclick="buttonCounter('placeholder12',12)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder13"
+              role="button"
+              onclick="buttonCounter('placeholder13',13)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder14"
+              role="button"
+              onclick="buttonCounter('placeholder14',14)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder15"
+              role="button"
+              onclick="buttonCounter('placeholder15',15)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder16"
+              role="button"
+              onclick="buttonCounter('placeholder16',16)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder17"
+              role="button"
+              onclick="buttonCounter('placeholder17',17)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder18"
+              role="button"
+              onclick="buttonCounter('placeholder18',18)"
+            ></button>
+          </div>
+          <div class="grid-item">
+            <button
+              class="button1"
+              id="placeholder19"
+              role="button"
+              onclick="buttonCounter('placeholder19',19)"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <a href="" target="_blank">Click here for registration</a>
+      </div>
+    </main>
+  </body>
+</html>
+<script>
+  if (localStorage.length) {
+    var storedPosi = JSON.parse(localStorage.getItem("storedposi"));
+    var test = document.getElementsByClassName("button1");
+    var c = 0;
+    while (c < 20) {
+      btn = test.item(c);
+      btn.style.backgroundImage = `url(${storedPosi[c]})`;
+      c++;
+    }
+  } else {
+    setRandom(bgImg);
+  }
+
+  if (localStorage.getItem("buttonState").length) {
+    var a = JSON.parse(localStorage.getItem("buttonState"));
+    for (var i = 0; i < 20; i++) {
+      buttonState[i] = a[i];
+    }
+  }
+  buttonState.forEach((e, i) => {
+    if (e) {
+      var btn = document.getElementById(`placeholder${i}`);
+      btn.style.backgroundColor = "#31157c";
+    }
+  });
+</script>
