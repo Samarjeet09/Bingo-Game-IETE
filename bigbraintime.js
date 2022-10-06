@@ -3,26 +3,20 @@ var buttonState = new Array(20).fill(false);
 var bgimgFixed = [];
 
 const bgImg = [
+  "./pictures/E0.png",
+  "./pictures/E1.png",
+  "./pictures/E2.png",
+  "./pictures/E3.png",
+  "./pictures/E4.png",
+  "./pictures/E5.png",
+  "./pictures/E6.png",
+  "./pictures/E7.png",
+  "./pictures/E8.png",
+  "./pictures/E9.png",
   "./pictures/css.png",
-  "./pictures/database.png",
   "./pictures/html.png",
   "./pictures/nodejs.png",
   "./pictures/py.png",
-  "./pictures/img1.jpg",
-  "./pictures/img2.jpg",
-  "./pictures/img3.jpg",
-  "./pictures/img4.jfif",
-  "./pictures/img5.png",
-  "./pictures/css.png",
-  "./pictures/database.png",
-  "./pictures/html.png",
-  "./pictures/nodejs.png",
-  "./pictures/py.png",
-  "./pictures/img1.jpg",
-  "./pictures/img2.jpg",
-  "./pictures/img3.jpg",
-  "./pictures/img4.jfif",
-  "./pictures/img5.png",
 ];
 
 function buttonCounter(id, val) {
@@ -32,8 +26,10 @@ function buttonCounter(id, val) {
     buttonState[val] = false;
     // console.log("false");
     btn.style.backgroundColor = "#fbeee0";
+    // btn.style.animationPlayState = "running";
   } else {
     btn.style.backgroundColor = "#31157c";
+    // btn.style.animationPlayState = "paused";
     buttonState[val] = true;
     // console.log("true");
   }
