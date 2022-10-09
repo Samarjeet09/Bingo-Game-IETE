@@ -15,7 +15,7 @@ body {
 #navbar {
   border: 2px solid black;
   padding-top: 10px;
-  line-height: 50px;
+  line-height: 3.125rem;
   height: 120px;
   background-color: rgb(0, 0, 0);
   color: white;
@@ -69,7 +69,7 @@ body {
   grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(4, auto);
   /* background-color: #2196f3; */
-  /* padding: 2rem; */
+  padding: 2rem;
   margin-top: 5%;
   margin-bottom: 10%;
 }
@@ -88,7 +88,7 @@ body {
 /* CSS */
 .button1 {
   background-color: #fbeee0;
-  background-size: 50px 50px;
+  background-size: 3.125rem 3.125rem;
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #837f7a;
@@ -101,8 +101,8 @@ body {
   font-weight: 600;
   /* font-size: 18px; */
   /* padding: 0 18px; */
-  line-height: 50px;
-  width: 70px;
+  line-height: 3.125rem;
+  width: 4.375rem;
   height: 5.313rem;
   text-align: center;
   text-decoration: none;
@@ -126,7 +126,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 100px; /* Height of the footer */
+  height: 6.25rem; /* Height of the footer */
   background: black;
   color: white;
   font-weight: bold;
@@ -175,5 +175,3 @@ body {
     transform: translatey(0px);
   }
 }
-
-
