@@ -14,7 +14,7 @@ body {
 }
 #navbar {
   border: 2px solid black;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   line-height: 50px;
   width: 100%;
   height: 120px;
