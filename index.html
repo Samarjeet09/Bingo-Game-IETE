@@ -237,20 +237,21 @@
       btn.style.backgroundImage = `url(${storedPosi[c]})`;
       c++;
     }
+    if (localStorage.getItem("buttonState")) {
+      if (localStorage.getItem("buttonState").length) {
+        var a = JSON.parse(localStorage.getItem("buttonState"));
+        for (var i = 0; i < 20; i++) {
+          buttonState[i] = a[i];
+        }
+      }
+      buttonState.forEach((e, i) => {
+        if (e) {
+          var btn = document.getElementById(`placeholder${i}`);
+          btn.style.backgroundColor = "#31157c";
+        }
+      });
+    }
   } else {
     setRandom(bgImg);
   }
-
-  if (localStorage.getItem("buttonState").length) {
-    var a = JSON.parse(localStorage.getItem("buttonState"));
-    for (var i = 0; i < 20; i++) {
-      buttonState[i] = a[i];
-    }
-  }
-  buttonState.forEach((e, i) => {
-    if (e) {
-      var btn = document.getElementById(`placeholder${i}`);
-      btn.style.backgroundColor = "#31157c";
-    }
-  });
 </script>

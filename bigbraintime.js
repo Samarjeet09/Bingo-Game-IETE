@@ -24,7 +24,7 @@ const bgImg = [
   "./pictures/W8.png",
   "./pictures/W9.png",
   "./pictures/py.png",
-  "./pictures/M1.png",
+  "./pictures/M1.jpg",
   "./pictures/M2.png",
   "./pictures/M3.png",
   "./pictures/M4.png",
