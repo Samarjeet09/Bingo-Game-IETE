@@ -234,7 +234,7 @@
     var storedPosi = JSON.parse(localStorage.getItem("storedposi"));
     var test = document.getElementsByClassName("button1");
     var c = 0;
-    while (c < 20) {
+    while (c < 25) {
       btn = test.item(c);
       btn.style.backgroundImage = `url(${storedPosi[c]})`;
       c++;
@@ -242,7 +242,7 @@
     if (localStorage.getItem("buttonState")) {
       if (localStorage.getItem("buttonState").length) {
         var a = JSON.parse(localStorage.getItem("buttonState"));
-        for (var i = 0; i < 20; i++) {
+        for (var i = 0; i < 25; i++) {
           buttonState[i] = a[i];
         }
       }
